@@ -1,0 +1,18 @@
+<h1>Lista de Donaciones</h1>
+{% if lista_de_donaciones  %}
+<ul>
+    {% for i in lista_de_donaciones %}
+        <li><b>{{i.nombre_cliente}}</b> es dueño de la mascota <b>{{i.mascota}}</b> y pesa 
+        <b>{{i.mascota.peso}}</b> kilos</li>
+    {% endfor %}
+{% else %}
+    <p>No hay donaciones disponibles</p>
+{% endif %}
+</ul>
+
+<h3><a href="/donacion/mascota"> Ir a la lista de mascotas</a></h3>
+<h3><a href="/donacion/especie"> Ir a la lista de especies</a></h3>
+<h3><a href="/donacion/raza"> Ir a la alista de razas</a></h3>
+
+<h2>Acciones</h2>
+<h3><a href="">Nueva Donación</a></h3>

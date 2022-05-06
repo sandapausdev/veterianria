@@ -1,0 +1,14 @@
+<h1>Lista de mascotas</h1>
+{% if lista_de_mascotas %}
+<ul>
+    {% for i in lista_de_mascotas %}
+        <li>{{i.nombre_mascota}}</li>
+    {% endfor %}
+{% else %}
+    <p>No hay mascotas disponibles</p>
+{% endif %} 
+</ul>
+<h3><a href="/donacion/"> Volver</a></h3>
+
+<h2>Acciones</h2>
+<h3><a href="">Nueva Mascota</a></h3>

@@ -22,7 +22,8 @@ class Mascota(models.Model):
     color = models.CharField(max_length=50)
     fecha_registro = models.DateTimeField("Fecha de registro de mascota")
     peso = models.IntegerField(default=0)
-
+    estado = models.IntegerField(default=0)
+    
     def __str__(self):
         return self.nombre_mascota
 
@@ -32,3 +33,6 @@ class Donacion(models.Model):
     nombre_cliente = models.CharField(max_length=200)
     dni = models.CharField(max_length=8)
     edad = models.IntegerField()
+
+    def __str__(self):
+        return self.nombre_cliente

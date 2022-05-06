@@ -1,0 +1,14 @@
+<h1>Lista de especies</h1>
+{% if lista_de_especies %}
+<ul>
+    {% for i in lista_de_especies %}
+        <li>{{i.nombre_especie}}</li>
+    {% endfor %}
+{% else %}
+    <p>No hay especies registradas</p>
+{% endif %} 
+</ul>
+<h3><a href="/donacion/"> Volver</a></h3>
+
+<h2>Acciones</h2>
+<h3><a href="">Nueva Especie</a></h3>

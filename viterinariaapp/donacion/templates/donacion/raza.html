@@ -1,0 +1,14 @@
+<h1>Lista de razas</h1>
+{% if lista_de_razas %}
+<ul>
+    {% for i in lista_de_razas %}
+        <li>{{i.nombre_raza}}</li>
+    {% endfor %}
+{% else %}
+    <p>No hay razas registradas</p>
+{% endif %} 
+</ul>
+<h3><a href="/donacion/"> Volver</a></h3>
+
+<h2>Acciones</h2>
+<h3><a href="">Nueva Raza</a></h3>
